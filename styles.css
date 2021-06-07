@@ -1,0 +1,214 @@
+.wrapper {
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    
+    /* background-image: url(./images/long-trail.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+
+}
+
+header {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+ul {
+    font-family: 'Alfa Slab One', cursive;
+    width: 500px;
+    height: auto;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 14px;
+       
+}
+.navButton {
+    text-decoration: none;
+    color: black;
+}
+
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: auto;
+    display: flex;
+}
+.titleArea {
+    display: flex;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-bottom: 25px;
+    width: auto;
+  
+    
+}
+.slideName {
+    display: flex;
+    font-size: 40px;
+    padding: 0 20px;
+    width: 375px;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+.rollingInfo {
+        
+        display: flex;
+        border: 1px solid black;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 60%;
+        width: auto;
+    }
+
+#myImage {
+    width: 300px;
+  height: 300px;
+  border-radius: 40%;
+  margin-left: 20%;
+  margin-bottom: 50px;
+}
+/* .mainImage {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(scarecrow-2193142_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+} */
+
+/* 
+.imageText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    /* border: 1px solid green; */
+    /* height: 300px;
+    width: 425px;
+    margin-left: 10%;
+    line-height: 1.1;
+} */
+/* h2  {
+    width: 410px;
+    font-size: 25px;
+} */
+/* h2>span {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+/* h3>span {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+} */
+/* .readMore {
+    text-decoration: none;
+} */
+/* .readMore>span {
+    background-color: turquoise;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+} */
+
+
+
+footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    justify-content: center;
+   
+}
+
+
+
+.socialMedia {
+    /* border: 1px solid gold; */
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 200px;
+    color: white;
+}
+.socialBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 780px) {
+    .title {
+        font-size: 15px;
+    }
+}   
+@media (max-width: 680px) {
+    footer {
+        height: 150px;
+        flex-direction: column;
+    }
+    .socialMedia, .copyright {
+        margin: 0 0 ;
+    }
+    .socialMedia {
+        width: 200px;       
+    }
+    .socialLine {
+        flex-direction: row;
+    }
+}
+   
+
+ @media (max-width: 580px) {
+    .mustacheSilhouette {
+        width: 250px;  
+    }
+    .companyName {
+        font-size: 15px;        
+    }
+    .title {
+        font-size: 10px;
+    }
+    ul {
+        flex-direction: column;
+    }
+    h2>span {
+        font-size: 20px;
+    }
+    /* h3>span {
+        background-color: black;
+        
+        font-size: 15px;
+        
+    } */
+
+     
+ }
