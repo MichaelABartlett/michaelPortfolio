@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to right, tan , rgb(228, 166, 85), tan);
+    background-image: linear-gradient(to right, brown , rgb(228, 166, 85), brown);
 }
 
 header {
@@ -16,8 +16,7 @@ header {
     border-bottom: 6px solid black;
 }
 
-
-ul {
+.headerList {
     font-family: 'Alfa Slab One', cursive;
     width: 500px;
     height: auto;
@@ -29,35 +28,37 @@ ul {
     margin-top: 20px;
     font-size: 15px;
        
-}
-.navButton {
+  }
+  .buttonColor {
     text-decoration: none;
     color: black;
-}
-
+  }
+  
+  .navButton{
+    transform: rotate(0);
+    transition: transform 1.5s ease;  
+  }
+  
+  .navButton:hover{
+      transform: rotate(360deg);
+  }
+  
 .titleBlock {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
 
 }
-
-.title {
-    /* border: 1px solid blue; */
-    font-family: 'Poller One', cursive;
-    font-size: 25px;
+h1 {
+    font-size: 60px;
+}
+section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 45px;
-    /* width: 575px; */
-    color: white;
+    width: auto;
+    
+    
 }
-h1>span {
-    background-color: black;
-    padding: 5px 25px;
-}
-
 .blogs {
     display: flex;
     justify-content: center;
@@ -85,15 +86,28 @@ h1>span {
     align-items: center;
     padding-left: 75px;
     padding-right: 75px;
+   
 }
-
 .readMore {
-    background-color: black;
+    
     text-decoration: none;
     color: white;
     font-size: 20px;
     padding: 10px;
 }
+
+.look{
+    transition: transform 0.5s ease;
+    transform: scale(1, 1);
+    background-color: black;
+  }
+  
+  
+  .look:hover {
+    transform: scale(1.05);
+    background-color:  rgb(228, 166, 85);
+  }
+
 
 footer {
     /* border: 1px solid red; */
@@ -129,19 +143,24 @@ footer {
     /* border: 2px solid blue; */
     height: 45px;
     width: 45px;
-    /* background-color: white; */
     border-radius: 5px;
 }
 
 @media (max-width: 780px) {
-    .title {
-        font-size: 15px;
+    section>h1 {
+        font-size: 40px;
     }
 }   
 @media (max-width: 680px) {
     footer {
         height: 150px;
         flex-direction: column;
+    }
+    .blogWords {
+        width: 500px;
+    }
+    .blogWords>h2 {
+        font-size: 20px;
     }
     .socialMedia, .copyright {
         margin: 0 0 ;
@@ -156,27 +175,12 @@ footer {
    
 
  @media (max-width: 580px) {
-    .mustacheSilhouette {
-        width: 250px;  
-    }
-    .companyName {
-        font-size: 15px;        
-    }
-    .title {
-        font-size: 10px;
-    }
+    
     ul {
         flex-direction: column;
     }
     h2>span {
         font-size: 20px;
     }
-    /* h3>span {
-        background-color: black;
-        
-        font-size: 15px;
-        
-    } */
-
-     
+    
  }

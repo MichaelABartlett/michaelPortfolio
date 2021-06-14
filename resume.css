@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to right, tan , rgb(228, 166, 85), tan);
+    background-image: linear-gradient(to right, brown , rgb(228, 166, 85), brown);
 }
 
 header {
@@ -30,27 +30,37 @@ header {
     margin-top: 20px;
     font-size: 15px;
        
-}
-.navButton {
+  }
+  .buttonColor {
     text-decoration: none;
     color: black;
+  }
+  
+  .navButton{
+    transform: rotate(0);
+    transition: transform 1.5s ease;  
+  }
+  
+  .navButton:hover{
+      transform: rotate(360deg);
+  }
+ 
+  h1 {
+    font-size: 60px;
 }
 
 h3 {
     font-size: 40px;
 }
-p {
-    font-size: 50px;
-  
-}
-.mainTitle {
-    border: 1px solid black;
+.titleLine {
     display: flex;
     justify-content: center;
-    margin: 25px 0 25px 0;
+    width: auto;
+    
+    
 }
 section {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     width: auto;
@@ -72,7 +82,11 @@ article {
     list-style-type: circle;
     margin-left: 20px;
 }
-.attention {
+h3 {
+    display: flex;
+    justify-content: center;
+}
+#attention {
     display: flex;
     flex-direction: column;
     list-style-type: circle;
@@ -113,7 +127,6 @@ footer {
     /* border: 2px solid blue; */
     height: 45px;
     width: 45px;
-    /* background-color: white; */
     border-radius: 5px;
 }
 
@@ -121,6 +134,9 @@ footer {
 @media (max-width: 780px) {
     .title {
         font-size: 15px;
+    }
+    .titleLine>h1 {
+        font-size: 40px;
     }
 }   
 @media (max-width: 680px) {
@@ -137,19 +153,21 @@ footer {
     .socialLine {
         flex-direction: row;
     }
+    .titleLine>h1 {
+        font-size: 30px;
+    }
+    article {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
 }
    
 
  @media (max-width: 580px) {
-    .mustacheSilhouette {
-        width: 250px;  
-    }
-    .companyName {
-        font-size: 15px;        
-    }
-    .title {
-        font-size: 10px;
-    }
+    
     ul {
         flex-direction: column;
     }
@@ -157,6 +175,13 @@ footer {
         width: auto;
         margin-left: 20px;
         margin-right: 20px;
+        
+    }
+    h3 {
+        font-size: 25px;
+    }
+    #attention {
+        font-size: 15px;
     }
 
      

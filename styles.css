@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     padding: 20px;
-    background-image: linear-gradient(to right, tan , rgb(228, 166, 85), tan);
+    background-image: linear-gradient(to right,brown , rgb(228, 166, 85), brown);
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 
 }
 
-ul {
+.headerList {
     font-family: 'Alfa Slab One', cursive;
     width: 500px;
     height: auto;
@@ -29,28 +29,51 @@ ul {
     margin-top: 20px;
     font-size: 15px;
        
-}
-.navButton {
+  }
+  .buttonColor {
     text-decoration: none;
     color: black;
-}
+  }
+  
+  .navButton{
+    transform: rotate(0);
+    transition: transform 1.5s ease;  
+  }
+  
+  .navButton:hover{
+      transform: rotate(360deg);
+  }
 
 
 .mainSection {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: auto;
     display: flex;
 }
+.middle {
+    /* The image used */
+    background-image: url("./images/big-bend1.png");
+  
+    /* Full height */
+    height: 1000px; 
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .titleArea {
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 50px;
     margin-left: 15%;
     margin-bottom: 25px;
     width: 375px;
-    /* width: auto; */
   
     
 }
@@ -67,7 +90,7 @@ h4 {
 .rollingInfo {
         
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-top: 50px;
         margin-bottom: 50px;
         max-width: fit-content;
@@ -83,17 +106,17 @@ h4 {
     flex-direction: row;
 }
 .middleContentWords {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     font-size: 30px;
     right: 15%;
 }
 #myImage {
     width: 300px;
-  height: 300px;
-  border-radius: 40%;
-  margin-left: 20%;
-  margin-bottom: 50px;
+    height: 300px;
+    border-radius: 40%;
+    margin-left: 20%;
+    margin-top: -250px;
 }
 
 article:nth-of-type(1) {
@@ -107,12 +130,12 @@ article:nth-of-type(2) {
     animation-fill-mode: backwards;
     
   }
-  .middleContentWords {
-    transition-delay: 2s;
-    animation: moveInRight 1s ease-out 1s;  
+  .myImage {
+    
+    animation: moveInRight .75s ease-out .75s;  
     animation-fill-mode: backwards;
-   
   }
+  
 
   @keyframes moveInRight {
     0% {
@@ -179,14 +202,26 @@ article:nth-of-type(2) {
     /* border: 2px solid blue; */
     height: 45px;
     width: 45px;
-    /* background-color: white; */
     border-radius: 5px;
 }
 
+@media (max-width: 1120px) {
+    #myImage{
+        margin-top: 100px;
+    }
+}
 
 @media (max-width: 780px) {
     .title {
         font-size: 15px;
+    }
+    .jobTitle{
+        font-size: 25px;
+    }
+    .titleArea {
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
     }
 }   
 @media (max-width: 680px) {
@@ -203,16 +238,25 @@ article:nth-of-type(2) {
     .socialLine {
         flex-direction: row;
     }
+    #myImage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .middleContent {
+        display: flex;
+        justify-content: center;
+    }
+    .jobTitle{
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 25px;
+    }
 }
    
 
  @media (max-width: 580px) {
-    .mustacheSilhouette {
-        width: 250px;  
-    }
-    .companyName {
-        font-size: 15px;        
-    }
+    
     .title {
         font-size: 10px;
     }
@@ -222,12 +266,7 @@ article:nth-of-type(2) {
     h2>span {
         font-size: 20px;
     }
-    /* h3>span {
-        background-color: black;
-        
-        font-size: 15px;
-        
-    } */
+    
 
      
  }

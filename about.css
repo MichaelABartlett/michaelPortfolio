@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   padding: 20px;
-  background-image: linear-gradient(to right, tan , rgb(228, 166, 85), tan);
+  background-image: linear-gradient(to right,brown , rgb(228, 166, 85), brown);
 }
 
 header {
@@ -61,7 +61,7 @@ section {
     display: flex;
     justify-content: center;
     width: auto;
-    /* margin: 50px 20px 25px 20px; */
+    
     
 }
 
@@ -161,7 +161,6 @@ footer {
     /* border: 2px solid blue; */
     height: 45px;
     width: 45px;
-    /* background-color: white; */
     border-radius: 5px;
 }
 
@@ -184,16 +183,14 @@ footer {
     .socialLine {
         flex-direction: row;
     }
+    .articalAttention>h3 {
+      font-size: 30px;
+    }
 }
    
 
  @media (max-width: 580px) {
-    .mustacheSilhouette {
-        width: 250px;  
-    }
-    .companyName {
-        font-size: 15px;        
-    }
+    
     .title {
         font-size: 10px;
     }
